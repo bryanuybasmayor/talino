@@ -162,6 +162,34 @@ inspectable and makes a later move to a database a single-module change.
 
 ---
 
+## Deploying the demo (GitHub Pages)
+
+`.github/workflows/deploy.yml` publishes a read-only copy on every push to `main`.
+
+1. In the repo, open **Settings → Pages → Build and deployment** and set
+   **Source** to **GitHub Actions**. A branch source serves the raw source
+   files, whose absolute `/src/...` references cannot run from `/talino/`.
+2. Push to `main`. The workflow seeds the demo store, snapshots the API's read
+   responses into `public/demo-data/`, builds with `base=/talino/` and
+   `VITE_STATIC_DEMO=true`, then deploys `dist/`.
+
+The site is **read-only**. Pages has no Node server, so the client reads the
+JSON snapshot instead of `/api`: reports, charts, AI summaries and the audit
+log display normally, while importing CSVs, generating AI copy and approving
+summaries report that the demo build cannot write. Run `npm run demo` locally
+for the full workflow.
+
+To build locally the same way:
+
+```bash
+npm run demo:reset && npm run snapshot:static
+VITE_STATIC_DEMO=true npm run build && npm run preview
+```
+
+`BASE_PATH` overrides the `/talino/` sub-path when the repo is renamed.
+
+---
+
 ## Accessibility & print
 
 - Every chart has an `aria-label` summary and a **View as table** toggle.

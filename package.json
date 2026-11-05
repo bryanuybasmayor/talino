@@ -9,6 +9,7 @@
     "demo": "concurrently -k -n server,client -c cyan,magenta \"npm run dev:server\" \"npm run dev:client\"",
     "demo:reset": "node scripts/reset.js",
     "seed:listening": "node scripts/make-sample-listening.js",
+    "snapshot:static": "node scripts/snapshot-api.js",
     "build": "vite build",
     "preview": "vite preview"
   },

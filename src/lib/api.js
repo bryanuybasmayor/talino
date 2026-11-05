@@ -4,7 +4,54 @@
 
 const BASE = '/api';
 
+// ── Static demo mode ─────────────────────────────────────────────────────
+// A host with no Node server (GitHub Pages) gets a JSON snapshot of the read
+// endpoints, written by scripts/snapshot-api.js. Build those sites with
+// VITE_STATIC_DEMO=true.
+const STATIC_DEMO = import.meta.env.VITE_STATIC_DEMO === 'true';
+const DATA_BASE = `${import.meta.env.BASE_URL}demo-data/`;
+
+let manifestPromise = null;
+
+function loadManifest() {
+  if (!manifestPromise) {
+    manifestPromise = fetch(`${DATA_BASE}manifest.json`).then((res) => {
+      if (!res.ok) throw new Error('Demo data is missing from this build');
+      return res.json();
+    });
+  }
+  return manifestPromise;
+}
+
+async function staticRequest(path) {
+  const [endpoint, query] = path.split('?');
+  const manifest = await loadManifest();
+  const file = manifest[endpoint];
+  if (!file) throw new Error(`This demo build has no data for ${endpoint}`);
+
+  const res = await fetch(`${DATA_BASE}${file}`);
+  if (!res.ok) throw new Error(`Demo data error ${res.status} for ${endpoint}`);
+  let data = await res.json();
+
+  // The only query the client sends is a client filter on /reports.
+  if (query) {
+    const client = new URLSearchParams(query).get('client');
+    if (client && Array.isArray(data)) data = data.filter((r) => r.client === client);
+  }
+
+  return data;
+}
+
+function readOnlyError() {
+  return new Error('This is a read-only demo build. Run the app locally to import or edit reports.');
+}
+
 async function request(path, options = {}) {
+  if (STATIC_DEMO) {
+    if (options.method && options.method !== 'GET') throw readOnlyError();
+    return staticRequest(path);
+  }
+
   const url = `${BASE}${path}`;
   const res = await fetch(url, {
     headers: { 'Content-Type': 'application/json', ...options.headers },
@@ -34,6 +81,7 @@ export const getReportData = (id, file) => request(`/reports/${id}/data/${file}`
 
 // ── Import ───────────────────────────────────────────────────────────────
 export async function importCSVs(reportId, files) {
+  if (STATIC_DEMO) throw readOnlyError();
   const formData = new FormData();
   for (const f of files) formData.append('files', f);
   
@@ -49,6 +97,7 @@ export async function importCSVs(reportId, files) {
 }
 
 export async function previewCSVs(reportId, files) {
+  if (STATIC_DEMO) throw readOnlyError();
   const formData = new FormData();
   for (const f of files) formData.append('files', f);
   
@@ -67,6 +116,7 @@ export async function previewCSVs(reportId, files) {
 export const getAIStatus = () => request('/ai/status');
 
 export function runAITags(reportId, onProgress) {
+  if (STATIC_DEMO) return Promise.reject(readOnlyError());
   return new Promise((resolve, reject) => {
     let resolved = false, settled = false;
     const finish = (v) => { if (!settled) { settled = true; resolved = true; resolve(v); } };
@@ -110,6 +160,7 @@ export function runAITags(reportId, onProgress) {
 }
 
 export function runAISummaries(reportId, onProgress) {
+  if (STATIC_DEMO) return Promise.reject(readOnlyError());
   return new Promise((resolve, reject) => {
     fetch(`${BASE}/reports/${reportId}/ai/summaries`, { method: 'POST' })
       .then(res => {

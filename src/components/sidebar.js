@@ -5,6 +5,7 @@
 
 import { icon } from '../lib/icons.js';
 import { currentPath } from '../lib/router.js';
+import { assetUrl } from '../lib/asset.js';
 
 function getTheme() {
   return localStorage.getItem('theme') || 'system';
@@ -55,7 +56,7 @@ export function renderSidebar() {
     <div class="sidebar-dark lg:hidden fixed top-0 left-0 right-0 z-50 backdrop-blur-xl border-b border-border px-4 py-3 flex items-center justify-between no-print">
       <div class="flex items-center gap-2">
         <span class="grid place-items-center w-8 h-8 rounded-xl bg-linear-to-br from-white/95 to-white/80 ring-1 ring-white/25 shadow-sm">
-          <img src="/assets/logos/talino-mark.svg" alt="TALINO" class="w-6 h-6 rounded-md" />
+          <img src="${assetUrl('/assets/logos/talino-mark.svg')}" alt="TALINO" class="w-6 h-6 rounded-md" />
         </span>
         <span class="font-display font-bold text-sm text-gradient">TALINO</span>
       </div>
@@ -77,7 +78,7 @@ export function renderSidebar() {
       <div class="p-4 border-b border-border">
         <a href="#/" class="flex items-center gap-2.5 group">
           <span class="grid place-items-center w-10 h-10 rounded-xl bg-linear-to-br from-white/95 to-white/80 ring-1 ring-white/25 shadow-md shadow-black/20 transition-transform group-hover:scale-105">
-            <img src="/assets/logos/talino-mark.svg" alt="TALINO" class="w-8 h-8 rounded-lg" />
+            <img src="${assetUrl('/assets/logos/talino-mark.svg')}" alt="TALINO" class="w-8 h-8 rounded-lg" />
           </span>
           <div>
             <span class="font-display font-bold text-sm text-gradient block leading-tight">TALINO</span>

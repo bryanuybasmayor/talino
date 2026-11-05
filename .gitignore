@@ -1,5 +1,6 @@
 node_modules/
 dist/
+public/demo-data/
 .env
 data/raw/
 data/store/

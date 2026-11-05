@@ -6,6 +6,7 @@ import { getClients, getReports } from '../lib/api.js';
 import { icon } from '../lib/icons.js';
 import { statusBadge, card, button, emptyState } from '../components/ui.js';
 import { formatDateRange } from '../lib/format.js';
+import { assetUrl } from '../lib/asset.js';
 
 // Colour rails cycled across report rows so the list reads as a set, not a wall of grey.
 const ACCENTS = [
@@ -88,7 +89,7 @@ export async function renderHome(main) {
         <div class="section-enter">
           <div class="flex items-center gap-3 mb-3">
             ${logo
-              ? `<img src="${logo}" alt="${clientName}" class="w-8 h-8 rounded-lg ring-1 ring-border bg-surface-raised p-0.5" />`
+              ? `<img src="${assetUrl(logo)}" alt="${clientName}" class="w-8 h-8 rounded-lg ring-1 ring-border bg-surface-raised p-0.5" />`
               : `<span class="grid place-items-center w-8 h-8 rounded-lg bg-linear-to-br from-brand-primary/20 to-accent-violet/15 text-brand-primary ring-1 ring-brand-primary/20 font-display text-sm font-bold">${clientName.slice(0, 1)}</span>`}
             <h2 class="text-lg font-semibold font-display text-ink">${clientName}</h2>
             <span class="h-px flex-1 bg-linear-to-r from-border-strong/60 to-transparent"></span>

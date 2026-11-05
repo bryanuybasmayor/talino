@@ -4,6 +4,7 @@ import { card, sectionHeader, kpiTile, aiReadBox, sampleBadge, sentimentBar, nar
 import { formatCurrency, formatNumber, formatWhole, formatPct, formatDate, formatDateRange, formatWeek } from '../lib/format.js';
 import { hBars, vBars, stackedBars, lines, chartBlock, bindChartTableToggles, PALETTE } from '../lib/charts.js';
 import { computeEngagementRate, computeLANUEfficiency, computeSentimentSplit, computeEmotionMix, computeTopicRanking, toLongTags } from '../lib/metrics.js';
+import { assetUrl } from '../lib/asset.js';
 
 // Theme-aware chart colors
 const POS = 'var(--color-positive)';
@@ -57,8 +58,8 @@ export async function renderReport(main, reportId) {
     <header class="panel-hero relative border-b border-border bg-surface-raised/90 print:bg-white print:border-b">
       <div class="max-w-5xl mx-auto px-4 sm:px-6 py-7">
         <div class="flex items-center gap-3 mb-3">
-          ${client?.logo ? `<img src="${client.logo}" alt="${client.name}" class="w-10 h-10 rounded-lg ring-1 ring-border bg-surface-raised p-0.5" />` : ''}
-          <img src="/assets/logos/talino-mark.svg" alt="TALINO" class="w-8 h-8" />
+          ${client?.logo ? `<img src="${assetUrl(client.logo)}" alt="${client.name}" class="w-10 h-10 rounded-lg ring-1 ring-border bg-surface-raised p-0.5" />` : ''}
+          <img src="${assetUrl('/assets/logos/talino-mark.svg')}" alt="TALINO" class="w-8 h-8" />
           <span class="px-2 py-0.5 text-[10px] font-semibold uppercase tracking-widest rounded-full bg-brand-primary/10 text-brand-primary ring-1 ring-brand-primary/20">Client report</span>
         </div>
         <h1 class="text-3xl font-bold font-display text-ink leading-tight">${report.title}</h1>
