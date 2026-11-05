@@ -317,7 +317,13 @@ for (const issue of warningIssues) {
 
 writeJSON(path.join(RPT1_DIR, 'data_quality.json'), dataQualityIssues);
 
-// 3i. Audit log
+// 3i. Optional pre-generated AI summaries
+// Real data keeps live AI off, but committed summaries let the static build
+// render them without an API call. Source: data/seed/ai_summaries.campaign.json
+const campaignSummarySeed = path.join(SEED, 'ai_summaries.campaign.json');
+const hasCampaignSummaries = fs.existsSync(campaignSummarySeed);
+
+// 3j. Audit log
 writeJSON(path.join(RPT1_DIR, 'audit_log.json'), [
   { ts, action: 'import', source: 'kpis.csv', rows: kpis.length, actor: 'demo:reset' },
   { ts, action: 'import', source: 'lanus_2026.csv', rows: lanus.length, actor: 'demo:reset' },
@@ -326,10 +332,18 @@ writeJSON(path.join(RPT1_DIR, 'audit_log.json'), [
   { ts, action: 'import', source: 'format_mix.csv', rows: formatMix.length, actor: 'demo:reset' },
   { ts, action: 'import', source: 'ploom_mentions.csv', rows: ploomMentions.length, actor: 'demo:reset' },
   { ts, action: 'data_quality', issues: dataQualityIssues.length, warnings: warningIssues.length, affected_rows: affectedPostIds.size, actor: 'demo:reset' },
+  ...(hasCampaignSummaries
+    ? [{ ts, action: 'import', source: 'seed/ai_summaries.campaign.json', actor: 'demo:reset' }]
+    : []),
 ]);
 
-// 3j. Empty AI files (real data — AI not allowed on free tier)
-writeJSON(path.join(RPT1_DIR, 'ai_summaries.json'), []);
+// 3k. AI files. Tags stay empty (campaign data is never tagged); summaries come
+// from the seed file when present so the static demo can display them.
+if (hasCampaignSummaries) {
+  fs.copyFileSync(campaignSummarySeed, path.join(RPT1_DIR, 'ai_summaries.json'));
+} else {
+  writeJSON(path.join(RPT1_DIR, 'ai_summaries.json'), []);
+}
 writeJSON(path.join(RPT1_DIR, 'ai_tags.json'), []);
 
 // ─── 4. Report 2 — Social listening preview ─────────────────────────────────
@@ -393,7 +407,8 @@ Client: ZYN Philippines
 Report 1: Campaign performance, Jan 2025 – Oct 2026
   - ${campaignPosts.length} posts, ${kpis.length} KPI periods, ${lanus.length} LANUs, ${campaignShare.length} campaigns, ${formatMix.length} format entries, ${ploomMentions.length} Ploom mentions
   - ${warningIssues.length} data quality issues (${affectedPostIds.size} affected rows)
-  - Status: ready | AI: off (real data, free-tier rule)`);
+  - Status: ready | AI: off (real data, free-tier rule)
+  - AI summaries: ${hasCampaignSummaries ? 'seeded from data/seed/ai_summaries.campaign.json' : 'none'}`);
 
 if (seedExists) {
   console.log(`

@@ -1,0 +1,74 @@
+{
+  "sections": {
+    "overview": {
+      "draft": "The 2026 YTD performance demonstrates strong brand presence through 3,171 posts generating 46.5M reach, 38.2M views, and ₱3.05B in EMV, alongside a solid 4.40% engagement rate. To sustain this trajectory, the team should optimize content distribution around top-performing formats to further maximize audience retention.",
+      "final": "The 2026 YTD performance demonstrates strong brand presence through 3,171 posts generating 46.5M reach, 38.2M views, and ₱3.05B in EMV, alongside a solid 4.40% engagement rate. To sustain this trajectory, the team should optimize content distribution around top-performing formats to further maximize audience retention.",
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_version": "1.0",
+      "generated_at": "2026-11-05T04:43:50.462Z",
+      "approved_by": "Bryan",
+      "approved_at": "2026-11-05T04:43:50.462Z"
+    },
+    "lanu_leaderboard": {
+      "draft": "Donny Pangilinan leads the rankings with ₱241.9M in earned media value from a single post generating 758.9K reach, demonstrating exceptional efficiency compared to higher-frequency creators like Ashtine Olviga and MegaMagazine. To maximize return, concentrate future investment on high-impact talent who deliver massive valuation from minimal post volume.",
+      "final": "Donny Pangilinan leads the rankings with ₱241.9M in earned media value from a single post generating 758.9K reach, demonstrating exceptional efficiency compared to higher-frequency creators like Ashtine Olviga and MegaMagazine. To maximize return, concentrate future investment on high-impact talent who deliver massive valuation from minimal post volume.",
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_version": "1.0",
+      "generated_at": "2026-11-05T04:43:51.312Z",
+      "approved_by": "Bryan",
+      "approved_at": "2026-11-05T04:43:51.312Z"
+    },
+    "format_mix": {
+      "draft": "Instagram stories dominate the format mix with approximately 2,950 static posts and 2,430 video posts, far outpacing standard posts, reels, and all activity across Facebook, TikTok, and X. Maintain high-volume story publishing on Instagram while reallocating production resources to scale video formats like Reels where volume currently sits at approximately 380 posts.",
+      "final": "Instagram stories dominate the format mix with approximately 2,950 static posts and 2,430 video posts, far outpacing standard posts, reels, and all activity across Facebook, TikTok, and X. Maintain high-volume story publishing on Instagram while reallocating production resources to scale video formats like Reels where volume currently sits at approximately 380 posts.",
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_version": "1.0",
+      "generated_at": "2026-11-05T04:43:56.561Z",
+      "approved_by": "Bryan",
+      "approved_at": "2026-11-05T04:43:56.561Z"
+    },
+    "campaigns": {
+      "draft": "Across 3,171 posts, campaign share",
+      "final": "Across 3,171 posts, campaign share",
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_version": "1.0",
+      "generated_at": "2026-11-05T04:44:03.922Z",
+      "approved_by": "Bryan",
+      "approved_at": "2026-11-05T04:44:03.922Z"
+    },
+    "top_posts": {
+      "draft": "The top-performing content is led by Maymay Entrata's Facebook Reel on the ZYN_Mega Ball campaign, which generated 3.3M reach and ₱784.7M in EMV. However, post P02 has a data integrity issue due to missing platform and format fields. Moving forward, enforce complete metadata entry for all creator submissions to ensure accurate cross-platform tracking.",
+      "final": "The top-performing content is led by Maymay Entrata's Facebook Reel on the ZYN_Mega Ball campaign, which generated 3.3M reach and ₱784.7M in EMV. However, post P02 has a data integrity issue due to missing platform and format fields. Moving forward, enforce complete metadata entry for all creator submissions to ensure accurate cross-platform tracking.",
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_version": "1.0",
+      "generated_at": "2026-11-05T04:44:09.360Z",
+      "approved_by": "Bryan",
+      "approved_at": "2026-11-05T04:44:09.360Z"
+    },
+    "competitor_watch": {
+      "draft": "Competitor activity for the current period registers 21 total mentions, driven primarily by cross-platform event promotions and influencer content from Ploom PH and @macmanicad. To counter this concentrated visibility, ZYN Philippines should deploy targeted digital activations that highlight lifestyle integration and event sponsorships.",
+      "final": "Competitor activity for the current period registers 21 total mentions, driven primarily by cross-platform event promotions and influencer content from Ploom PH and @macmanicad. To counter this concentrated visibility, ZYN Philippines should deploy targeted digital activations that highlight lifestyle integration and event sponsorships.",
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_version": "1.0",
+      "generated_at": "2026-11-05T04:44:10.371Z",
+      "approved_by": "Bryan",
+      "approved_at": "2026-11-05T04:44:10.371Z"
+    },
+    "data_quality": {
+      "draft": "Integrity checks reveal duplicated performance metrics across multiple influencer posts, specifically affecting Heart Evangelista (P05, P06), Lella Ford (P10, P11, P12), and Atasha Muhlach (P14, P15), while distinct high-value outliers are recorded for Maymay Entrata, Donny Pangilinan, Kayla Jean Carter, and Dustin Yu. To resolve these reporting irregularities and ensure accurate performance valuation, audit the tracking implementation for the affected IDs to verify whether these duplicated figures stem from syndication or data collection errors.",
+      "final": "Integrity checks reveal duplicated performance metrics across multiple influencer posts, specifically affecting Heart Evangelista (P05, P06), Lella Ford (P10, P11, P12), and Atasha Muhlach (P14, P15), while distinct high-value outliers are recorded for Maymay Entrata, Donny Pangilinan, Kayla Jean Carter, and Dustin Yu. To resolve these reporting irregularities and ensure accurate performance valuation, audit the tracking implementation for the affected IDs to verify whether these duplicated figures stem from syndication or data collection errors.",
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "prompt_version": "1.0",
+      "generated_at": "2026-11-05T04:44:11.735Z",
+      "approved_by": "Bryan",
+      "approved_at": "2026-11-05T04:44:11.735Z"
+    }
+  }
+}
