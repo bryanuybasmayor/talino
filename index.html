@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TALINO — Client Insights</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/logos/talino-mark.svg" />
+  <!-- Prevent flash of wrong theme -->
+  <script>
+    (function() {
+      // ?theme=light|dark overrides for demos and testing
+      const param = new URLSearchParams(location.search).get('theme');
+      if (param === 'light' || param === 'dark') localStorage.setItem('theme', param);
+      const stored = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (stored === 'dark' || (!stored && prefersDark) || (stored === 'system' && prefersDark)) {
+        document.documentElement.classList.add('dark');
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="/src/styles/main.css" />
+</head>
+<body class="bg-surface text-ink min-h-screen antialiased transition-colors duration-200">
+  <div id="app" class="flex flex-col lg:flex-row min-h-screen">
+    <aside id="sidebar" class="sidebar"></aside>
+    <main id="main" class="main-canvas flex-1 min-w-0"></main>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

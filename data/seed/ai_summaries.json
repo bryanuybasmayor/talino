@@ -1,0 +1,124 @@
+{
+  "sections": {
+    "headline_strip": {
+      "draft": "ZYN Philippines generated 1,265 tracked mentions across the monitoring period, with a net sentiment of +9.4 points (39.4% positive vs 30.0% negative). The dominant emotion cluster is joy, reflecting the strong event-driven conversation around ZYN campaigns. Facebook leads platform share at 37.0%, followed by TikTok and Instagram. The peak conversation week was the week of 8 June 2026 with 184 mentions, coinciding with ZYN Vogue Labs.",
+      "final": "ZYN Philippines generated 1,265 tracked mentions across the monitoring period, with a net sentiment of +9.4 points (39.4% positive vs 30.0% negative). The dominant emotion cluster is joy, reflecting the strong event-driven conversation around ZYN campaigns. Facebook leads platform share at 37.0%, followed by TikTok and Instagram. The peak conversation week was the week of 8 June 2026 with 184 mentions, coinciding with ZYN Vogue Labs.",
+      "generated_at": "2026-10-22T18:40:04.535Z",
+      "provider": "seed",
+      "model": "pre-generated",
+      "prompt_version": "1.0",
+      "approved_by": "Bryan",
+      "approved_at": "2026-10-22T18:40:04.535Z"
+    },
+    "brand_sentiment": {
+      "draft": "Net sentiment sits at +9.4, with positive mentions (39.4%) outpacing negative (30.0%) by a comfortable margin. The neutral share at 30.5% is typical for a brand with strong event-driven conversation — most neutral mentions are informational or news coverage. The emotion mix skews toward joy and excitement, driven by campaign activations. Recommend monitoring the negative sentiment cluster around health and age concerns, which could erode the positive baseline if left unaddressed.",
+      "final": "Net sentiment sits at +9.4, with positive mentions (39.4%) outpacing negative (30.0%) by a comfortable margin. The neutral share at 30.5% is typical for a brand with strong event-driven conversation — most neutral mentions are informational or news coverage. The emotion mix skews toward joy and excitement, driven by campaign activations. Recommend monitoring the negative sentiment cluster around health and age concerns, which could erode the positive baseline if left unaddressed.",
+      "generated_at": "2026-10-22T18:40:04.535Z",
+      "provider": "seed",
+      "model": "pre-generated",
+      "prompt_version": "1.0",
+      "approved_by": "Bryan",
+      "approved_at": "2026-10-22T18:40:04.535Z"
+    },
+    "trending_issues": {
+      "draft": "\"event experience\" dominates the conversation at 379 mentions, reflecting ZYN's event-heavy strategy. \"Product & flavor\" runs second with genuine consumer interest in the product line. The concerning signals are \"health & safety\" (90 mentions) and \"age & legality\" (90 mentions) — both carry predominantly negative sentiment. The age & legality cluster spiked notably in the two weeks following the Mega Ball 2026 event. Recommend preparing a proactive responsibility messaging framework before the next major activation.",
+      "final": "\"event experience\" dominates the conversation at 379 mentions, reflecting ZYN's event-heavy strategy. \"Product & flavor\" runs second with genuine consumer interest in the product line. The concerning signals are \"health & safety\" (90 mentions) and \"age & legality\" (90 mentions) — both carry predominantly negative sentiment. The age & legality cluster spiked notably in the two weeks following the Mega Ball 2026 event. Recommend preparing a proactive responsibility messaging framework before the next major activation.",
+      "generated_at": "2026-10-22T18:40:04.535Z",
+      "provider": "seed",
+      "model": "pre-generated",
+      "prompt_version": "1.0",
+      "approved_by": "Bryan",
+      "approved_at": "2026-10-22T18:40:04.535Z"
+    },
+    "geographic": {
+      "draft": "Conversation is heavily Metro Manila-centric — Manila, Quezon City, and Makati account for the largest share of geo-tagged mentions. Cebu City is the strongest regional market, consistent with the ZYN Summer Cebu campaign activation. Davao City shows steady organic conversation. Only about 60% of mentions carry geo-tags, so regional volumes are directional rather than absolute. Recommend expanding event activations to Visayas and Mindanao cities where organic interest already exists.",
+      "final": "Conversation is heavily Metro Manila-centric — Manila, Quezon City, and Makati account for the largest share of geo-tagged mentions. Cebu City is the strongest regional market, consistent with the ZYN Summer Cebu campaign activation. Davao City shows steady organic conversation. Only about 60% of mentions carry geo-tags, so regional volumes are directional rather than absolute. Recommend expanding event activations to Visayas and Mindanao cities where organic interest already exists.",
+      "generated_at": "2026-10-22T18:40:04.535Z",
+      "provider": "seed",
+      "model": "pre-generated",
+      "prompt_version": "1.0",
+      "approved_by": "Bryan",
+      "approved_at": "2026-10-22T18:40:04.535Z"
+    },
+    "conversation_volume": {
+      "draft": "Weekly mention volume runs a baseline of 20–35 mentions per week, with clear spikes around campaign events. The ZYN Mega Ball 2026 (week of June 9) drove the highest peak at 184 mentions — roughly 513% above baseline. The Summer circuit (Cebu, Siargao, Boracay) created a sustained elevated period from March through May. Volume dips during non-campaign weeks suggest the brand conversation is still heavily event-dependent. Recommend building always-on content to raise the organic baseline.",
+      "final": "Weekly mention volume runs a baseline of 20–35 mentions per week, with clear spikes around campaign events. The ZYN Mega Ball 2026 (week of June 9) drove the highest peak at 184 mentions — roughly 513% above baseline. The Summer circuit (Cebu, Siargao, Boracay) created a sustained elevated period from March through May. Volume dips during non-campaign weeks suggest the brand conversation is still heavily event-dependent. Recommend building always-on content to raise the organic baseline.",
+      "generated_at": "2026-10-22T18:40:04.535Z",
+      "provider": "seed",
+      "model": "pre-generated",
+      "prompt_version": "1.0",
+      "approved_by": "Bryan",
+      "approved_at": "2026-10-22T18:40:04.535Z"
+    },
+    "platform_sentiment": {
+      "draft": "Facebook carries the highest volume share at 37.0%, with a sentiment profile that mirrors the overall brand average. TikTok skews younger and more positive — event content performs especially well here. Instagram shows the highest positive-to-negative ratio, driven by celebrity and lifestyle content. X/Twitter is the most polarized platform with the highest negative share, as health and regulatory discussions concentrate there. Forums carry low volume but disproportionately negative sentiment — this is where detailed health concerns surface. Recommend platform-specific content strategies rather than cross-posting.",
+      "final": "Facebook carries the highest volume share at 37.0%, with a sentiment profile that mirrors the overall brand average. TikTok skews younger and more positive — event content performs especially well here. Instagram shows the highest positive-to-negative ratio, driven by celebrity and lifestyle content. X/Twitter is the most polarized platform with the highest negative share, as health and regulatory discussions concentrate there. Forums carry low volume but disproportionately negative sentiment — this is where detailed health concerns surface. Recommend platform-specific content strategies rather than cross-posting.",
+      "generated_at": "2026-10-22T18:40:04.535Z",
+      "provider": "seed",
+      "model": "pre-generated",
+      "prompt_version": "1.0",
+      "approved_by": "Bryan",
+      "approved_at": "2026-10-22T18:40:04.535Z"
+    },
+    "narrative_map": {
+      "draft": "The brand-positive narrative stack is anchored by the Mega Ball event series, which generates the highest volume and most positive sentiment of any single topic. Celebrity endorsements provide a reliable secondary positive driver. On the risk side, \"underage access concerns\" is the single highest-priority narrative — it spiked after the Mega Ball and carries strong anger/disgust emotions. Health risk anxiety is a steady-burn concern that could escalate with any negative news coverage. Price resistance is growing in the August-September period. Recommend addressing the age & legality narrative proactively before it becomes a media story.",
+      "final": "The brand-positive narrative stack is anchored by the Mega Ball event series, which generates the highest volume and most positive sentiment of any single topic. Celebrity endorsements provide a reliable secondary positive driver. On the risk side, \"underage access concerns\" is the single highest-priority narrative — it spiked after the Mega Ball and carries strong anger/disgust emotions. Health risk anxiety is a steady-burn concern that could escalate with any negative news coverage. Price resistance is growing in the August-September period. Recommend addressing the age & legality narrative proactively before it becomes a media story.",
+      "generated_at": "2026-10-22T18:40:04.535Z",
+      "provider": "seed",
+      "model": "pre-generated",
+      "prompt_version": "1.0",
+      "approved_by": "Bryan",
+      "approved_at": "2026-10-22T18:40:04.535Z"
+    },
+    "top_voices": {
+      "draft": "The top organic voices are dominated by lifestyle and vape-review accounts on TikTok and Facebook. @manila.nightout leads in combined reach and engagement, functioning as an unofficial brand amplifier through event coverage. Pinoy Vape Reviews on YouTube provides the most detailed product commentary. PhilStar Digital carries the highest single-post reach but low engagement — typical of news coverage. No strongly negative top voices appear in the top 10, but Ka-Vape Forum hosts the most detailed health-concern discussions. Recommend engaging the top positive voices with early event access to maximize organic amplification.",
+      "final": "The top organic voices are dominated by lifestyle and vape-review accounts on TikTok and Facebook. @manila.nightout leads in combined reach and engagement, functioning as an unofficial brand amplifier through event coverage. Pinoy Vape Reviews on YouTube provides the most detailed product commentary. PhilStar Digital carries the highest single-post reach but low engagement — typical of news coverage. No strongly negative top voices appear in the top 10, but Ka-Vape Forum hosts the most detailed health-concern discussions. Recommend engaging the top positive voices with early event access to maximize organic amplification.",
+      "generated_at": "2026-10-22T18:40:04.535Z",
+      "provider": "seed",
+      "model": "pre-generated",
+      "prompt_version": "1.0",
+      "approved_by": "Bryan",
+      "approved_at": "2026-10-22T18:40:04.535Z"
+    },
+    "language_sentiment": {
+      "draft": "Filipino-language mentions carry the highest volume share at approximately 35%, with a sentiment profile close to the overall average. Taglish (30%) skews slightly more positive — this is the language of event excitement and celebrity commentary. English (25%) is more neutral, dominated by news and informational content. Cebuano (10%) shows strong positive sentiment, likely driven by the ZYN Summer Cebu activation. The negative sentiment in Filipino-language mentions is concentrated in health and age concerns — these are the conversations that matter most for reputation management.",
+      "final": "Filipino-language mentions carry the highest volume share at approximately 35%, with a sentiment profile close to the overall average. Taglish (30%) skews slightly more positive — this is the language of event excitement and celebrity commentary. English (25%) is more neutral, dominated by news and informational content. Cebuano (10%) shows strong positive sentiment, likely driven by the ZYN Summer Cebu activation. The negative sentiment in Filipino-language mentions is concentrated in health and age concerns — these are the conversations that matter most for reputation management.",
+      "generated_at": "2026-10-22T18:40:04.535Z",
+      "provider": "seed",
+      "model": "pre-generated",
+      "prompt_version": "1.0",
+      "approved_by": "Bryan",
+      "approved_at": "2026-10-22T18:40:04.535Z"
+    },
+    "keywords": {
+      "draft": "The keyword landscape is dominated by brand and event terms — #ZYN, #ZYNMegaBall, and #ZYNPhilippines lead volume. The risk-cluster keywords (underage, bata, health risk, addiction, bawal) collectively represent a meaningful share of conversation and carry strong negative sentiment. #SmokeFree and #NicotinePouch indicate product-category interest. The presence of \"Ploom\" in the keyword list confirms active competitor comparison in the market. Recommend monitoring the risk-cluster keywords as early-warning indicators for potential media escalation.",
+      "final": "The keyword landscape is dominated by brand and event terms — #ZYN, #ZYNMegaBall, and #ZYNPhilippines lead volume. The risk-cluster keywords (underage, bata, health risk, addiction, bawal) collectively represent a meaningful share of conversation and carry strong negative sentiment. #SmokeFree and #NicotinePouch indicate product-category interest. The presence of \"Ploom\" in the keyword list confirms active competitor comparison in the market. Recommend monitoring the risk-cluster keywords as early-warning indicators for potential media escalation.",
+      "generated_at": "2026-10-22T18:40:04.535Z",
+      "provider": "seed",
+      "model": "pre-generated",
+      "prompt_version": "1.0",
+      "approved_by": "Bryan",
+      "approved_at": "2026-10-22T18:40:04.535Z"
+    },
+    "viral_posts": {
+      "draft": "The top viral posts are dominated by event content — ZYN Mega Ball 2026 and the Summer circuit drive the highest reach and engagement numbers. The highest-reach single post came from a TikTok event recap, consistent with the platform's strength in short-form event content. Notably, no negative-sentiment posts appear in the top 5 viral list, suggesting that risk narratives spread through volume rather than individual viral moments. The viral content pattern confirms that ZYN's event strategy is its strongest organic amplification engine.",
+      "final": "The top viral posts are dominated by event content — ZYN Mega Ball 2026 and the Summer circuit drive the highest reach and engagement numbers. The highest-reach single post came from a TikTok event recap, consistent with the platform's strength in short-form event content. Notably, no negative-sentiment posts appear in the top 5 viral list, suggesting that risk narratives spread through volume rather than individual viral moments. The viral content pattern confirms that ZYN's event strategy is its strongest organic amplification engine.",
+      "generated_at": "2026-10-22T18:40:04.535Z",
+      "provider": "seed",
+      "model": "pre-generated",
+      "prompt_version": "1.0",
+      "approved_by": "Bryan",
+      "approved_at": "2026-10-22T18:40:04.535Z"
+    },
+    "share_of_voice": {
+      "draft": "ZYN dominates share of voice at approximately 84% of total conversation volume vs Ploom's 16%. ZYN's advantage is driven by event activations and celebrity partnerships — Ploom's conversation is more product-focused and event-specific (Manila Gin Festival). Ploom's sentiment profile is slightly more positive than ZYN's, likely because it faces less scrutiny on health and age issues due to lower visibility. As Ploom increases its Philippine presence, expect its share of voice to grow. Recommend tracking Ploom's event calendar and influencer partnerships as competitive intelligence.",
+      "final": "ZYN dominates share of voice at approximately 84% of total conversation volume vs Ploom's 16%. ZYN's advantage is driven by event activations and celebrity partnerships — Ploom's conversation is more product-focused and event-specific (Manila Gin Festival). Ploom's sentiment profile is slightly more positive than ZYN's, likely because it faces less scrutiny on health and age issues due to lower visibility. As Ploom increases its Philippine presence, expect its share of voice to grow. Recommend tracking Ploom's event calendar and influencer partnerships as competitive intelligence.",
+      "generated_at": "2026-10-22T18:40:04.535Z",
+      "provider": "seed",
+      "model": "pre-generated",
+      "prompt_version": "1.0",
+      "approved_by": "Bryan",
+      "approved_at": "2026-10-22T18:40:04.535Z"
+    }
+  }
+}

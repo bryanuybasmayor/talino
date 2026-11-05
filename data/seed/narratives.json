@@ -1,0 +1,70 @@
+{
+  "provider": "seed",
+  "model": "pre-generated",
+  "prompt_version": "1.0",
+  "generated_at": "2026-10-22T18:40:04.542Z",
+  "positive": [
+    {
+      "title": "Mega Ball Hype Machine",
+      "description": "The ZYN Mega Ball 2026 is the single largest conversation driver, generating massive positive sentiment through event coverage, celebrity sightings, and attendee excitement. It functions as the brand's anchor narrative.",
+      "topic": "event experience",
+      "status": "ANCHOR"
+    },
+    {
+      "title": "Summer Circuit Buzz",
+      "description": "The ZYN Summer series (Cebu, Siargao, Boracay) creates a sustained positive conversation wave from March through May, building anticipation for the Mega Ball and establishing ZYN as a lifestyle brand.",
+      "topic": "event experience",
+      "status": "STEADY"
+    },
+    {
+      "title": "Celebrity Endorsement Power",
+      "description": "Heart Evangelista, Donny Pangilinan, and other celebrity LANUs drive high-engagement positive content. Celebrity mentions carry the highest positive sentiment ratio of any topic.",
+      "topic": "celebrity / LANU",
+      "status": "STEADY"
+    },
+    {
+      "title": "Flavor Discovery Wave",
+      "description": "Growing organic conversation around ZYN flavors, particularly mint and citrus, with consumers sharing genuine product experiences and recommendations. This is expanding beyond the event-driven audience.",
+      "topic": "product & flavor",
+      "status": "ESCALATING"
+    },
+    {
+      "title": "Smoke-Free Lifestyle Community",
+      "description": "A small but growing community of users positioning ZYN as part of a smoke-free lifestyle choice, using hashtags like #SmokeFree and sharing personal switch stories.",
+      "topic": "other",
+      "status": "STEADY"
+    }
+  ],
+  "risk": [
+    {
+      "title": "Underage Access Concerns — \"Ang daming bata\"",
+      "description": "The most urgent risk narrative. Reports of teenagers purchasing and using ZYN, concentrated in Filipino-language social media. Spiked sharply after the Mega Ball 2026 event, suggesting large events increase visibility to minors.",
+      "topic": "age & legality",
+      "status": "RED FLAG"
+    },
+    {
+      "title": "Health Risk Anxiety — \"Safe ba talaga?\"",
+      "description": "Steady-burn concern about long-term health effects of nicotine pouches. Concentrated in forums and X/Twitter. Often framed as questions rather than accusations, but the uncertainty itself is damaging.",
+      "topic": "health & safety",
+      "status": "ESCALATING"
+    },
+    {
+      "title": "Price Resistance — \"Ang mahal na\"",
+      "description": "Growing complaints about ZYN pricing, particularly in the August-September period. Price sensitivity is highest outside Metro Manila. Some users explicitly mention switching to cheaper alternatives.",
+      "topic": "price & availability",
+      "status": "STEADY"
+    },
+    {
+      "title": "Ploom Design Appeal — \"Mas premium ang Ploom\"",
+      "description": "A subset of comparison mentions favor Ploom's device design and premium positioning. While ZYN wins on flavor variety, Ploom is gaining mindshare on aesthetics and brand image.",
+      "topic": "competitor comparison",
+      "status": "STEADY"
+    },
+    {
+      "title": "Regulatory Scrutiny — \"Kailangan ng batas\"",
+      "description": "Calls for government regulation of nicotine pouch sales, particularly around age verification. This narrative overlaps with the underage access concern and could attract media or legislative attention.",
+      "topic": "age & legality",
+      "status": "ESCALATING"
+    }
+  ]
+}
